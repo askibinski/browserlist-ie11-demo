@@ -41,5 +41,5 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "browserslist": ["last 2 Chrome versions"]
+  "browserslist": [">0.25%", "not dead"]
 }
