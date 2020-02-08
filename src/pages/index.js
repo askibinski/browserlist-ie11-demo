@@ -1,21 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+
+
+const foodItems = [
+  "pizza",
+  "hamburger",
+  "pickles",
+  "gluten-free-waffles"
+];
+
+const food = foodItems.find(food => food.startsWith("p"));
+
+const getFood = function() {
+  alert(food);
+};
 
 const IndexPage = () => (
+
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <h1>{food}</h1>
+
+    <button onClick={getFood}>What food?</button>
+
   </Layout>
-)
+
+);
 
 export default IndexPage
