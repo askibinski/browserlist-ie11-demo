@@ -12,8 +12,8 @@ const foodItems = [
 
 const food = foodItems.find(food => food.startsWith("p"));
 
-const getFood = function() {
-  alert(food);
+const getColor = function() {
+  alert(['red', 'orange', 'green'].find(color => color.startsWith('o')));
 };
 
 const IndexPage = () => (
@@ -22,7 +22,7 @@ const IndexPage = () => (
 
     <h1>{food}</h1>
 
-    <button onClick={getFood}>What food?</button>
+    <button onClick={getColor}>What color?</button>
 
   </Layout>
 
