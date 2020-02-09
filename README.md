@@ -11,8 +11,7 @@ The default already provides polyfills for IE11 because it targets:
 
 If you enter [this query in browserl.ist](https://browserl.ist/?q=%3E0.25%25%2C+not+dead) you will see IE11 is supported (because it is at 1.43% global usage).
 
-So in index.js we have `food` and `getColor`. The first one is only used during server side rendering 
-so it doesn't count, but we also have a runtime alert function which uses arrow functions
+In index.js we use a runtime alert function which uses arrow functions
 and the prototype.array.find() method which is not available in IE11.
 
 Building the production build will prvide with polyfills and a working IE11 site.
