@@ -1,0 +1,8 @@
+import React from "react"
+import containerStyles from "./test.module.css"
+
+const TestContainer = ({ children }) => (
+  <section className={containerStyles.container}>{children}</section>
+)
+
+export default TestContainer;
